@@ -64,7 +64,7 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3000, () => {
-  //console.log("");
+const PORT =process.env.PORT || 3000
+app.listen(PORT, () => {
   console.log("server running on port 3000");
 });
